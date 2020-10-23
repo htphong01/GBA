@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sàn giao dịch tiêu Việt Nam</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+<body>
+    <div class="app">
+        <div class="app-header">
+            <div class="header-top-bar">
+                <div class="container header-highest">
+                    <div class="header-highest-left">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>Xem bán, giao hàng tại: </div>
+                        <span><b>Toàn quốc: <i class="fas fa-sort-down"></i></b></span>
+                    </div>
+                    <div class="header-highest-right">
+                        <ul class="header-highest-right-list">
+                            <li class="header-highest-item">
+                                <a href="#" class="header-highest__link">
+                                    Diễn đàn trao đổi
+                                </a>
+                            </li>
+                            <li class="header-highest-item">
+                                <a href="#" class="header-highest__link">
+                                    Theo dõi đơn hàng
+                                </a>
+                            </li>
+                            <li class="header-highest-item">
+                                <a href="#" class="header-highest__link">
+                                    Bán hàng cùng chúng tôi
+                                </a>
+                            </li>
+                            <li class="header-highest-item">
+                                <a href="#" class="header-highest__link">
+                                    Ngôn ngữ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-with-search-wrap ">
+                <div class="container header-with-search">
+                    <div class="header-logo">
+                        <a href="/">
+                            <img src="./assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header-search">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button type="button" class="btn btn-default dropdown-toggle dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>Tất cả danh mục</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">Tiêu</li>
+                                    <li class="dropdown-item">Tiêu</li>
+                                    <li class="dropdown-item">Tiêu</li>
+                                </ul>
+                            </div>
+                            <input type="text" class="form-control shadow-none" placeholder="Tìm kiếm sản phẩm" aria-label="" aria-describedby="basic-addon1">
+                            <div class="input-group-append header-search-icon-wrap">
+                                <span class="input-group-text">
+                                    <i class="fas fa-search header-search-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-login">
+                        <a href="#" class="header-login__link">
+                            <img src="./assets/images/user-black.svg" alt="">
+                            <span>Đăng nhập<br>Đăng ký</span>
+                        </a>
+                    </div>
+                    <div class="header-cart">
+                        <a href="#" class="header-cart__link">
+                            <img src="./assets/images/cart-black.svg" alt="">
+                            <span class="cart-circle">0</span>
+                            <span>GIỎ HÀNG</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-navbar-wrap">
+                <nav class="container header-navbar">
+                    <div class="header-navbar-left">
+                        <div class="header-navbar-categories">
+                            <span>DANH MỤC</span>
+                            <i class="fas fa-chevron-down"></i>
+                            <div class="sub-navbar-categories">
+                                <ul class="sub-navbar-list">
+                                    <li class="sub-navbar-item">
+                                        <a href="#" class="sub-navbar__link">
+                                            <img src="./assets/images/fruit.svg" alt="">
+                                            <span>Trái cây</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-navbar-item">
+                                        <a href="#" class="sub-navbar__link">
+                                            <img src="./assets/images/fruit.svg" alt="">
+                                            <span>Rau củ quả</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-navbar-item">
+                                        <a href="#" class="sub-navbar__link">
+                                            <img src="./assets/images/fruit.svg" alt="">
+                                            <span>Hoa tươi</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="header-navbar-list">
+                            <li class="header-navbar-item">
+                                <a href="#" class="header-navbar__link">SẢN PHẨM CÓ SẴN</a>
+                            </li>
+                            <li class="header-navbar-item">
+                                <a href="#" class="header-navbar__link">SẢN PHẨM BÁN TRƯỚC</a>
+                            </li>
+                            <li class="header-navbar-item">
+                                <a href="#" class="header-navbar__link">DANH SÁCH NHÀ CUNG CẤP</a>
+                            </li>
+                            <li class="header-navbar-item">
+                                <a href="#" class="header-navbar__link">SẢN PHẨM YÊU CẦU BÁO GIÁ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-navbar-right">
+                        <a href="#" class="header-navbar__link header-navbar__link--active">TẠO YÊU CẦU BÁO GIÁ</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="app-body">
+            <div class="container body-title-wrap">
+                <div class="body-title">
+                    <div class="body-title-heading">
+                        Sàn giao dịch tiêu trực tuyến
+                    </div>
+                    <div class="body-title-slogan">
+                        Hệ thống hỗ trợ kết nối và tiêu thụ tiêu hàng đầu Việt Nam
+                    </div>
+                </div>
+            </div>
+            <div class="container body-products">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link body-product__link active" data-toggle="tab" href="#tab1">
+                            Sản phẩm có sẵn
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link body-product__link" data-toggle="tab" href="#tab2">
+                            Sản phẩm bán trước
+                        </a>
+                    </li>
+                </ul>
+                  <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="tab1" class="container tab-pane active"><br>
+                        <div class="row">
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Hành Tím Dori Lý Sơn</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>55,000 - 59,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div id="tab2" class="container tab-pane"><br>
+                        <div class="row">
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Dâu tây Đà Lạt giống New</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>130,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Đà Lạt Sky Garden
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 500 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center my-5">
+                    <button class="see-more-btn">
+                        <a href="#" class="see-more__link">
+                            Xem thêm
+                            <i class="fas fa-caret-right"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="container body-products">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link body-product__link pepper-product__link" href="https://vinagex.com/">
+                           Hồ Tiêu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link body-product__link active" data-toggle="tab" href="#pepper-tab1">
+                            Sản phẩm có sẵn
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link body-product__link" data-toggle="tab" href="#pepper-tab2">
+                            Sản phẩm bán trước
+                        </a>
+                    </li>
+                </ul>
+                  <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="pepper-tab1" class="container tab-pane active"><br>
+                        <div class="row">
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Hành Tím Dori Lý Sơn</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>55,000 - 59,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Tỏi Lý Sơn - Thương hiệu Dori</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>200,000 - 1,500,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Công ty cổ phần Dori
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 1 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div id="pepper-tab2" class="container tab-pane"><br>
+                        <div class="row">
+                            <div class="col-sm-3 product-details-wrap">
+                                <div class="product-img-wrap">
+                                    <a href="#" class="product-img__link">
+                                        <img src="./assets/images/product2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-name">
+                                    <a href="#">Dâu tây Đà Lạt giống New</a>
+                                </div>
+                                <div class="product-price">
+                                    <span>130,000 đ</span> / kg
+                                </div>
+                                <div class="product-company">
+                                    <a href="#" class="product-company__link">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Đà Lạt Sky Garden
+                                    </a>
+                                </div>
+                                <div class="product-bought-min">
+                                    <div>Tối thiểu : 500 kg</div>
+                                    <div class="product-bought-star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        (3)
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center my-5">
+                    <button class="see-more-btn">
+                        <a href="#" class="see-more__link">
+                            Xem thêm Hồ tiêu
+                            <i class="fas fa-caret-right"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-footer">
+            <div class="footer-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 footer-menu-element">
+                            <div class="footer-menu-item-title">
+                                VỀ VINAGEX
+                            </div>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu__link">
+                                        Giới thiệu về VINAGEX
+                                    </a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu__link">
+                                        Chính sách bảo mật
+                                    </a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu__link">
+                                        Chính sách khiếu nại
+                                    </a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu__link">
+                                        Chính sách cấm/hạn chế sản phẩm
+                                    </a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu__link">
+                                        Điều khoản dịch vụ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 footer-menu-element">
+                            <div class="footer-menu-item-title">
+                                HỢP TÁC & TUYỂN DỤNG
+                            </div>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu__link">
+                                        Tuyển dụng
+                                    </a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu__link">
+                                        Liên hệ hợp tác
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 footer-menu-element">
+                            <div class="footer-menu-item-title">
+                                HƯỚNG DẪN CHO NGƯỜI MUA - NGƯỜI BN
+                            </div>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu__link">
+                                        Các câu hỏi thường gặp
+                                    </a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="#" class="footer-menu__link">
+                                        Chính sách đổi trả và hoàn tiền
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-sm-3 footer-menu-element">
+                            <div class="footer-menu-item-title">
+                                CNG TY CỔ PHẦN VINAGEX
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-communication">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 footer-communication-element">
+                            <div class="footer-communication-help">
+                                <a href="#">Trung tâm hỗ trợ</a>
+                            </div>
+                            <div class="footer-communication-contact">
+                                Liên hệ 0123456789 (Mr Tom)
+                            </div>
+                            <div class="footer-communication-email">
+                                Email: <span>vku@vku.udn.vn</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 footer-communication-element">
+                            <div class="footer-communication-title">
+                                VINAGEX APP
+                            </div>
+                            <div class="footer-communication-app">
+                                <a href="#" class="app__link">
+                                    <img src="./assets/images/icon-appstore.png" alt="">
+                                </a>
+                                <a href="#" class="app__link">
+                                    <img src="./assets/images/icon-googleplay.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 footer-communication-element">
+                            <div class="footer-communication-title">
+                                KẾT NỐI VỚI CHÚNG TÔI
+                            </div>
+                            <div class="footer-communication-socialite">
+                                <a href="#" class="social__link social-fb">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social__link  social-twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social__link  social-google">
+                                    <i class="fab fa-google-plus"></i>
+                                </a>
+                                <a href="#" class="social__link  social-youtube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
